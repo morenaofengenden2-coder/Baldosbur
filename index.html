@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Baldosbur | Baldosas y materiales</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+    <!-- ==============================
+         BARRA SUPERIOR
+    =============================== -->
+
+    <div class="barra-superior">
+        Envíos y consultas por WhatsApp
+    </div>
+
+
+    <!-- ==============================
+         ENCABEZADO
+    =============================== -->
+
+    <header class="header">
+
+        <div class="contenedor header-contenido">
+
+            <!-- LOGO -->
+
+            <a href="#inicio" class="logo">
+                <img src="img/logo.png" alt="Baldosbur">
+            </a>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="buscador">
+
+                <input
+                    type="text"
+                    id="buscador"
+                    placeholder="¿Qué estás buscando?"
+                >
+
+                <button type="button" aria-label="Buscar">
+                    <i data-lucide="search"></i>
+                </button>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav class="navegacion">
+
+                <a href="#inicio">Inicio</a>
+
+                <a href="#catalogo">Catálogo</a>
+
+                <a href="#nosotros">Nosotros</a>
+
+                <a href="#contacto">Contacto</a>
+
+            </nav>
+
+
+            <!-- CARRITO -->
+
+            <button
+                class="boton-carrito"
+                id="abrirCarrito"
+                aria-label="Abrir carrito">
+
+                <span class="icono-carrito">
+                    <i data-lucide="shopping-cart"></i>
+                </span>
+
+                <span
+                    class="cantidad-carrito"
+                    id="cantidadCarrito">
+                    0
+                </span>
+
+            </button>
+
+
+            <!-- MENÚ MOBILE -->
+
+            <button
+                class="boton-menu-mobile"
+                id="abrirMenu"
+                aria-label="Abrir menú">
+
+                <i data-lucide="menu"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==============================
+         MENÚ MOBILE
+    =============================== -->
+
+    <div class="menu-mobile" id="menuMobile">
+
+        <button
+            id="cerrarMenu"
+            aria-label="Cerrar menú">
+
+            <i data-lucide="x"></i>
+
+        </button>
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#catalogo">Catálogo</a>
+
+        <a href="#nosotros">Nosotros</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </div>
+
+
+    <main id="inicio">
+
+
+        <!-- ==============================
+             HERO
+        =============================== -->
+
+        <section class="hero">
+
+            <div class="hero-fondo"></div>
+
+            <div class="contenedor hero-contenido">
+
+                <div class="hero-texto">
+
+                    <span class="hero-etiqueta">
+                        BALDOSBUR
+                    </span>
+
+                    <h1>
+                        Baldosas y materiales
+                        para tus proyectos
+                    </h1>
+
+                    <p>
+                        Productos para renovar, construir
+                        y transformar tus espacios.
+                    </p>
+
+                    <div class="hero-botones">
+
+                        <a
+                            href="#catalogo"
+                            class="boton boton-principal">
+                            Ver catálogo
+                        </a>
+
+                        <a
+                            href="#contacto"
+                            class="boton boton-secundario">
+                            Contactanos
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             CATEGORÍAS
+        =============================== -->
+
+        <section class="seccion categorias">
+
+            <div class="contenedor">
+
+                <div class="encabezado-seccion">
+
+                    <span>
+                        Encontrá lo que buscás
+                    </span>
+
+                    <h2>
+                        Categorías
+                    </h2>
+
+                </div>
+
+
+                <div class="categorias-grid">
+
+
+                    <button
+                        class="categoria-card"
+                        data-categoria="Baldosas">
+
+                        <div class="categoria-imagen">
+                            <i data-lucide="square"></i>
+                        </div>
+
+                        <div class="categoria-info">
+
+                            <h3>
+                                Baldosas
+                            </h3>
+
+                            <p>
+                                Diferentes modelos y diseños
+                                para tus espacios.
+                            </p>
+
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="categoria-card"
+                        data-categoria="atermicas">
+
+                        <div class="categoria-imagen">
+                            <i data-lucide="sun"></i>
+                        </div>
+
+                        <div class="categoria-info">
+
+                            <h3>
+                                Baldosas atérmicas
+                            </h3>
+
+                            <p>
+                                Opciones para piscinas
+                                y espacios exteriores.
+                            </p>
+
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="categoria-card"
+                        data-categoria="Complementos">
+
+                        <div class="categoria-imagen">
+                            <i data-lucide="layers"></i>
+                        </div>
+
+                        <div class="categoria-info">
+
+                            <h3>
+                                Complementos
+                            </h3>
+
+                            <p>
+                                Guardas, zócalos
+                                y molduras.
+                            </p>
+
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="categoria-card"
+                        data-categoria="Materiales">
+
+                        <div class="categoria-imagen">
+                            <i data-lucide="package"></i>
+                        </div>
+
+                        <div class="categoria-info">
+
+                            <h3>
+                                Materiales
+                            </h3>
+
+                            <p>
+                                Cementos, ferrites
+                                y otros materiales.
+                            </p>
+
+                        </div>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             PRODUCTOS DESTACADOS
+        =============================== -->
+
+        <section class="seccion productos-destacados">
+
+            <div class="contenedor">
+
+                <div class="encabezado-seccion encabezado-flex">
+
+                    <div>
+
+                        <span>
+                            Nuestros productos
+                        </span>
+
+                        <h2>
+                            Productos destacados
+                        </h2>
+
+                    </div>
+
+
+                    <a
+                        href="#catalogo"
+                        class="ver-todo">
+                        Ver catálogo →
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="productos-grid"
+                    id="productosDestacados">
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- ==============================
+     GALERÍA DE TRABAJOS
+============================== -->
+
+<section class="seccion galeria-trabajos">
+
+    <div class="contenedor">
+
+        <div class="encabezado-seccion">
+
+            <span class="etiqueta-seccion">
+                INSPIRACIÓN
+            </span>
+
+            <h2>
+                Así quedan nuestras baldosas
+            </h2>
+
+            <p>
+                Mirá algunos trabajos realizados con nuestros productos.
+            </p>
+
+        </div>
+
+        <div class="galeria-grid">
+
+            <div class="galeria-item">
+                <img src="trabajo1.jpeg" alt="Baldosas colocadas">
+            </div>
+
+            <div class="galeria-item">
+                <img src="trabajo2.jpeg" alt="Baldosas colocadas">
+            </div>
+
+            <div class="galeria-item">
+                <img src="trabajo3.jpeg" alt="Baldosas colocadas">
+            </div>
+
+           
+
+        </div>
+
+    </div>
+
+</section>
+        <!-- ==============================
+             BANNER
+        =============================== -->
+
+        <section class="banner">
+
+            <div class="contenedor banner-contenido">
+
+                <div>
+
+                    <span>
+                        BALDOSBUR
+                    </span>
+
+                    <h2>
+                        Materiales para cada proyecto
+                    </h2>
+
+                    <p>
+                        Consultá nuestro catálogo y
+                        encontrá el producto que necesitás.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="#catalogo"
+                    class="boton boton-blanco">
+
+                    Ver productos
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             CATÁLOGO
+        =============================== -->
+
+        <section
+            class="seccion catalogo"
+            id="catalogo">
+
+            <div class="contenedor">
+
+                <div class="encabezado-seccion">
+
+                    <span>
+                        Todos nuestros productos
+                    </span>
+
+                    <h2>
+                        Catálogo
+                    </h2>
+
+                </div>
+
+
+                <!-- FILTROS -->
+
+                <div class="filtros">
+
+                    <button
+                        class="filtro activo"
+                        data-filtro="Todos">
+
+                        Todos
+
+                    </button>
+
+                    <button
+                        class="filtro"
+                        data-filtro="Baldosas">
+
+                        Baldosas
+
+                    </button>
+
+                    <button
+                        class="filtro"
+                        data-filtro="atermicas">
+
+                        Atérmicas
+
+                    </button>
+
+                    <button
+                        class="filtro"
+                        data-filtro="Complementos">
+
+                        Complementos
+
+                    </button>
+
+                    <button
+                        class="filtro"
+                        data-filtro="Materiales">
+
+                        Materiales
+
+                    </button>
+
+                </div>
+
+
+                <!-- PRODUCTOS -->
+
+                <div
+                    class="productos-grid"
+                    id="productos">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             NOSOTROS
+        =============================== -->
+
+        <section
+            class="seccion nosotros"
+            id="nosotros">
+
+            <div class="contenedor nosotros-grid">
+
+                <div class="nosotros-imagen">
+
+                    <div class="nosotros-logo">
+                        <span>BB</span>
+                        <small>BALDOSBUR</small>
+                    </div>
+
+                </div>
+
+
+                <div class="nosotros-texto">
+
+                    <span>
+                        Sobre nosotros
+                    </span>
+
+                    <h2>
+                        Calidad y materiales
+                        para tus proyectos
+                    </h2>
+
+                    <p>
+                        En Baldosbur ofrecemos baldosas y materiales para acompañarte en tus proyectos de construcción, renovación y exterior.
+                    </p>
+
+                    <p>
+                    Contamos con distintas opciones de productos, colores y terminaciones para que puedas encontrar la alternativa que mejor se adapte a cada proyecto.
+                    </p>
+
+                </div>  
+
+            </div>
+
+        </section>
+
+
+    
+
+    </main>
+<!-- ==============================
+     CONTACTO
+============================== -->
+
+<section
+    class="seccion contacto"
+    id="contacto">
+
+    <div class="contenedor">
+
+        <div class="encabezado-seccion">
+
+            <span>
+                ¿Necesitás ayuda?
+            </span>
+
+            <h2>
+                Contactanos
+            </h2>
+
+        </div>
+
+
+        <div class="contacto-grid">
+
+
+            <!-- UBICACIÓN -->
+
+            <div class="contacto-card">
+
+                <span class="contacto-icono">
+                    <i data-lucide="map-pin"></i>
+                </span>
+
+                <h3>
+                    Ubicación
+                </h3>
+
+                <p>
+                    Parque Industrial Comirsa
+                </p>
+
+                <a
+                    href="https://maps.app.goo.gl/hRsQCSGT5WA7SRmx8?g_st=ac"
+                    class="contacto-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Ver ubicación
+
+                </a>
+
+            </div>
+
+
+            <!-- HORARIOS -->
+
+            <div class="contacto-card">
+
+                <span class="contacto-icono">
+                    <i data-lucide="clock"></i>
+                </span>
+
+                <h3>
+                    Horarios
+                </h3>
+
+                <p class="horarios-contacto">
+                    Lunes a viernes: 15:20 – 18:00<br>
+                    Sábado: 10:00 – 12:30<br>
+                    Domingo: Cerrado
+                </p>
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+
+            <div class="contacto-card">
+
+                <span class="contacto-icono">
+                    <i data-lucide="message-circle"></i>
+                </span>
+
+                <h3>
+                    WhatsApp
+                </h3>
+
+                <p>
+                    Realizá tu consulta directamente.
+                </p>
+
+                <a
+                    href="https://wa.me/543364349826"
+                    class="contacto-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Escribir por WhatsApp
+
+                </a>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <div class="contacto-card">
+
+                <span class="contacto-icono instagram-icono">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true">
+
+                        <rect
+                            x="3"
+                            y="3"
+                            width="18"
+                            height="18"
+                            rx="5"
+                            ry="5">
+                        </rect>
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="4">
+                        </circle>
+
+                        <circle
+                            cx="17.5"
+                            cy="6.5"
+                            r="1">
+                        </circle>
+
+                    </svg>
+
+                </span>
+
+                <h3>
+                    Instagram
+                </h3>
+
+                <p>
+                    Conocé nuestros productos y novedades.
+                </p>
+
+                <a
+                    href="https://www.instagram.com/baldosbur/"
+                    class="contacto-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Ver Instagram
+
+                </a>
+
+            </div>
+
+
+            <!-- FACEBOOK -->
+
+            <div class="contacto-card">
+
+                <span class="contacto-icono facebook-icono">
+
+                   <span class="contacto-icono facebook-icono">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M14 8h3V4h-3c-3.31 0-5 1.69-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.67.33-1 1-1z"></path>
+    </svg>
+</span>
+
+                </span>
+
+                <h3>
+                    Facebook
+                </h3>
+
+                <p>
+                    Encontranos en Facebook.
+                </p>
+
+                <a
+                    href="https://www.facebook.com/share/1PfRB9QYqA/"
+                    class="contacto-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Ver Facebook
+
+                </a>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="contacto-card">
+
+                <span class="contacto-icono">
+                    <i data-lucide="mail"></i>
+                </span>
+
+                <h3>
+                    Email
+                </h3>
+
+                <p>
+                    baldosbur@gmail.com
+                </p>
+
+                <a
+                    href="mailto:baldosbur@gmail.com"
+                    class="contacto-link">
+
+                    Enviar email
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer class="footer">
+
+        <div class="contenedor footer-contenido">
+
+            <div class="footer-marca">
+
+                <strong>
+                    BALDOSBUR
+                </strong>
+
+                <p>
+                    Baldosas y materiales
+                    para tus proyectos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#catalogo">
+                    Catálogo
+                </a>
+
+                <a href="#nosotros">
+                    Nosotros
+                </a>
+
+                <a href="#contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+
+            <div class="footer-redes">
+
+                <span>
+                    Seguinos
+                </span>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="contenedor">
+
+                <p>
+                    © 2026 Baldosbur. Todos los derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==============================
+         CARRITO
+    =============================== -->
+
+    <aside
+        class="carrito"
+        id="carrito">
+
+        <div class="carrito-header">
+
+            <h2>
+                Tu carrito
+            </h2>
+
+            <button
+                id="cerrarCarrito"
+                class="cerrar"
+                aria-label="Cerrar carrito">
+
+                <i data-lucide="x"></i>
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="carrito-productos"
+            id="carritoProductos">
+
+            <p class="carrito-vacio">
+                Todavía no agregaste productos.
+            </p>
+
+        </div>
+
+
+        <div class="carrito-footer">
+
+            <div class="carrito-total">
+
+                <span>
+                    Total estimado
+                </span>
+
+                <strong id="totalCarrito">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="boton-whatsapp"
+                id="enviarWhatsApp">
+
+                Consultar pedido por WhatsApp
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- FONDO DEL CARRITO -->
+
+    <div
+        class="overlay"
+        id="overlay">
+    </div>
+
+
+    <!-- ==============================
+         ACTIVAR ÍCONOS
+    =============================== -->
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+<!-- MODAL PRODUCTO -->
+
+<div class="modal-producto" id="modalProducto">
+
+    <div class="modal-contenido">
+
+        <button class="modal-cerrar" id="cerrarModal" aria-label="Cerrar">
+            <i data-lucide="x"></i>
+        </button>
+
+        <div class="modal-grid">
+
+            <div class="modal-imagen" id="modalImagen">
+  <button class="flecha-imagen flecha-anterior" id="imagenAnterior" type="button">
+    ‹
+  </button>
+
+  <img id="imagenProducto" src="" alt="Imagen del producto">
+
+  <button class="flecha-imagen flecha-siguiente" id="imagenSiguiente" type="button">
+    ›
+  </button>
+</div>
+
+            <div class="modal-info">
+
+                <span class="modal-categoria" id="modalCategoria">
+                    BALDOSAS
+                </span>
+
+                <h2 id="modalNombre">
+                    Nombre del producto
+                </h2>
+
+                <p class="modal-medida" id="modalMedida">
+                    40 × 40 cm
+                </p>
+
+                <div class="modal-precio" id="modalPrecio">
+                    $15.500
+                </div>
+
+                <div class="modal-descripcion">
+                    <h3>Descripción</h3>
+                    <p id="modalDescripcion">
+                        Descripción del producto.
+                    </p>
+                </div>
+
+                <div class="modal-datos">
+
+                    <div>
+                        <span>Material</span>
+                        <strong id="modalMaterial">—</strong>
+                    </div>
+
+                    <div>
+                        <span>Terminación</span>
+                        <strong id="modalTerminacion">—</strong>
+                    </div>
+
+                    <div>
+                        <span>Código</span>
+                        <strong id="modalCodigo">—</strong>
+                    </div>
+
+                </div>
+
+               <div class="modal-opciones" id="modalOpciones"></div>
+
+<div class="modal-cantidad">
+    <span>Cantidad</span>
+
+    <div class="cantidad-control">
+        <button type="button" id="menosCantidad">−</button>
+        <strong id="cantidadProducto">1</strong>
+        <button type="button" id="masCantidad">+</button>
+    </div>
+</div>
+
+<button class="boton-agregar-modal" id="agregarDesdeModal">
+    Agregar al carrito
+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    <!-- JAVASCRIPT DE BALDOSBUR -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
