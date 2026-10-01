@@ -1826,3 +1826,38 @@ img {
 .galeria-item:hover img {
     transform: scale(1.04);
 }
+/* =========================================
+   CARRITO - AJUSTE PARA CELULAR
+========================================= */
+
+@media (max-width: 550px) {
+
+    .carrito {
+        height: 100dvh;
+        max-height: 100dvh;
+    }
+
+    .carrito-header {
+        flex-shrink: 0;
+    }
+
+    .carrito-productos {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+    }
+
+    .carrito-footer {
+        flex-shrink: 0;
+        padding: 15px;
+    }
+
+    .carrito-total {
+        margin-bottom: 12px;
+    }
+
+    .boton-whatsapp {
+        height: 48px;
+        min-height: 48px;
+    }
+}
