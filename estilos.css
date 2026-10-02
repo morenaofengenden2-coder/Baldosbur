@@ -1861,3 +1861,353 @@ img {
         min-height: 48px;
     }
 }
+/* =========================================
+   PÁGINA ASESORAMIENTO Y OBRAS
+========================================= */
+
+.pagina-asesoramiento {
+    background: #f7f7f7;
+}
+
+
+/* ==============================
+   HERO
+============================== */
+
+.asesoramiento-hero {
+    min-height: 390px;
+    background: #171717;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.asesoramiento-hero::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    right: -150px;
+    top: -200px;
+}
+
+.asesoramiento-hero-texto {
+    max-width: 760px;
+    position: relative;
+    z-index: 1;
+}
+
+.asesoramiento-hero-texto > span {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.asesoramiento-hero-texto h1 {
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.05;
+    text-transform: uppercase;
+}
+
+.asesoramiento-hero-texto p {
+    max-width: 650px;
+    margin: 0;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   SERVICIOS
+============================== */
+
+.asesoramiento-servicios {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.asesoramiento-servicios .encabezado-seccion {
+    max-width: 760px;
+    margin-bottom: 50px;
+}
+
+.asesoramiento-servicios .encabezado-seccion p {
+    max-width: 700px;
+    margin: 18px auto 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.servicio-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 35px 30px;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.servicio-icono {
+    width: 55px;
+    height: 55px;
+    background: #171717;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.servicio-icono svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+.servicio-card h3 {
+    margin: 0 0 15px;
+    font-size: 21px;
+    color: #202020;
+}
+
+.servicio-card p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   OBRAS
+============================== */
+
+.obras-seccion {
+    background: #fff;
+}
+
+
+.obras-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+
+.obras-texto > span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+
+.obras-texto h2 {
+    margin: 0 0 25px;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    color: #202020;
+}
+
+
+.obras-texto p {
+    margin: 0 0 18px;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+.obras-texto .boton {
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+
+.obras-imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+.obra-imagen {
+    height: 220px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+.obra-imagen.grande {
+    grid-column: span 2;
+    height: 300px;
+}
+
+
+.obra-imagen img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+.obra-imagen:hover img {
+    transform: scale(1.03);
+}
+
+
+/* ==============================
+   CTA
+============================== */
+
+.asesoramiento-cta {
+    background: #171717;
+    color: #fff;
+    padding: 70px 0;
+}
+
+
+.asesoramiento-cta .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.asesoramiento-cta span {
+    display: block;
+    margin-bottom: 12px;
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.asesoramiento-cta h2 {
+    margin: 0 0 12px;
+    font-size: 36px;
+}
+
+
+.asesoramiento-cta p {
+    margin: 0;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 900px) {
+
+    .navegacion {
+        display: none;
+    }
+
+    .buscador {
+        display: none;
+    }
+
+    .boton-menu-mobile {
+        display: flex;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .obras-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .asesoramiento-hero {
+        min-height: 330px;
+    }
+
+    .asesoramiento-hero-texto h1 {
+        font-size: 38px;
+    }
+
+    .asesoramiento-hero-texto p {
+        font-size: 16px;
+    }
+
+    .asesoramiento-servicios {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .servicio-card {
+        padding: 28px 24px;
+    }
+
+    .obras-grid {
+        gap: 35px;
+    }
+
+    .obras-texto h2 {
+        font-size: 34px;
+    }
+
+    .obras-imagenes {
+        gap: 10px;
+    }
+
+    .obra-imagen {
+        height: 150px;
+    }
+
+    .obra-imagen.grande {
+        height: 220px;
+    }
+
+    .asesoramiento-cta {
+        padding: 55px 0;
+    }
+
+    .asesoramiento-cta .contenedor {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .asesoramiento-cta h2 {
+        font-size: 30px;
+    }
+
+}
