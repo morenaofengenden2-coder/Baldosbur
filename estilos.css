@@ -2239,3 +2239,45 @@ img {
     }
 
 }
+/* =========================================
+   ASESORAMIENTO - AJUSTE MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .asesoramiento-hero {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 55px 0 60px;
+    }
+
+    .asesoramiento-hero-contenido {
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    .asesoramiento-hero-texto {
+        padding-bottom: 0;
+    }
+
+    .asesoramiento-hero-texto h1 {
+        margin-bottom: 25px;
+    }
+
+    .asesoramiento-hero-texto p {
+        margin-bottom: 28px;
+    }
+
+    .asesoramiento-hero .hero-botones {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .asesoramiento-hero .hero-botones .boton {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
