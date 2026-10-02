@@ -2224,3 +2224,18 @@ img {
 .volver-inicio:hover {
     opacity: 0.7;
 }
+/* =========================================
+   AJUSTE HERO CON 3 BOTONES - CELULAR
+========================================= */
+
+@media (max-width: 550px) {
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-botones {
+        gap: 12px;
+    }
+
+}
